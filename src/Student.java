@@ -50,12 +50,24 @@ public class Student {
             }
         }
         System.out.println("Current course: " + courses);
-        System.out.println("Tution Balance: " + tutionBalance);
+        System.out.println("Tution Balance: $" + tutionBalance);
     }
 
     // view balance
+    public void viewBalance() {
+        System.out.println("Your tution balance is: $" + tutionBalance);
+    }
 
-    // pay fees
+    // pay tution fee
+    public void payTution() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the amount, you want to pay: $");
+        int payment = in.nextInt();
+        in.nextLine(); // consume new line
+        tutionBalance -= payment;
+        System.out.println("Thank you for your payment of $" + payment);
+        viewBalance();
+    }
 
     // show status
 
