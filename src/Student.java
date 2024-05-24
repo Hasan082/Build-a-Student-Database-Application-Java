@@ -41,6 +41,13 @@ public class Student {
         this.studentId = gradeYear + "" + id;
     }
 
+    /**
+     * Reads an integer input from the provided Scanner object, handling exceptions
+     * gracefully.
+     * 
+     * @param in The Scanner object to read input from.
+     * @return The integer value entered by the user.
+     */
     public static int checkIntegerInput(Scanner in) {
         int value;
         while (true) {

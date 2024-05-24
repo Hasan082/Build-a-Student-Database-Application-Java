@@ -16,7 +16,8 @@ public class StudentDatabaseApplication {
 
         // Prompt the user to enter the number of students
         System.out.print("Enter number of students: ");
-        int numOStudents = Student.checkIntegerInput(in); // Read the number of students
+        // Read the number of students
+        int numOStudents = Student.checkIntegerInput(in);
 
         // Create an array to store Student objects
         Student[] students = new Student[numOStudents];
