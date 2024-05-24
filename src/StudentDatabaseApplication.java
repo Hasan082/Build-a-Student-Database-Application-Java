@@ -1,6 +1,7 @@
 public class StudentDatabaseApplication {
     public static void main(String[] args) throws Exception {
-        Student student = new Student();
+        Student student1 = new Student();
+        student1.enroll();
         // How many stduent new to this class
 
         // create a n number of students
