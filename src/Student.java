@@ -49,8 +49,6 @@ public class Student {
                 break;
             }
         }
-        System.out.println("Current course: " + courses);
-        System.out.println("Tution Balance: $" + tutionBalance);
     }
 
     // view balance
@@ -60,8 +58,9 @@ public class Student {
 
     // pay tution fee
     public void payTution() {
+        viewBalance();
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter the amount, you want to pay: $");
+        System.out.print("Enter the amount that you want to pay: $");
         int payment = in.nextInt();
         in.nextLine(); // consume new line
         tutionBalance -= payment;
